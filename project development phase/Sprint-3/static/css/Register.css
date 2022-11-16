@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero{
+    
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    margin-top: 0px;
+    margin-right: 150px;
+    margin-left: 0px;
+    background-color: black;
+}
+nav{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.home{
+  font-size: 20px;
+  flex:20px;
+  color: white;
+  margin-left: -110px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+
+}
+nav ul li a:hover{
+  color: red;
+  font-size: 17px;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  width: 500px;
+  display: block;
+  padding-left: 400px;
+  
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 450px;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+  font-size: 18px;
+  
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.mail{
+  font-size: 25px;
+  color: red;
+  
+}
+/* Set a style for the submit/register button */
+.registerbtn{
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 15px;
+  cursor:pointer ;
+  background-color: rgb(51, 132, 224);
+  width: 200px;
+  margin-left: 150px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.registerbtn:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.login{
+  text-align: center;
+  margin-right: 80px;
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+}

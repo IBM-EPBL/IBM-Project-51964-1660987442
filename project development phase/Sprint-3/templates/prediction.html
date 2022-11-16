@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="../static/css/prediction.css">
+</head>
+
+<body>
+    <div class="hero">
+     <nav>
+        <div class="home">
+            Diabetic Retinopathy Classification
+        </div>
+        <ul>
+            <li><a href="index">HOME</a></li>
+            <li><a href="logout">LOGOUT</a></li>
+        </ul>
+     </nav>
+    </div>
+
+    <div>
+        <img src="../static/image/p.jpg" 
+        style="height: 120px; width: 120px; margin-top: 100px; margin-left: 600px; border-radius: 500px;">
+    </div>
+    
+    <div class="file">
+        <form enctype=multipart/form-data action="/prediction" method="post">
+            <input  type="file" name="image" class="submit">
+        <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div>
+        <img src="../static/image/Pd.jpg" class="pd">
+    </div>
+    
+</body>
+</html>

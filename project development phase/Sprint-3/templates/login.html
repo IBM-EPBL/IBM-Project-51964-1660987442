@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <div class="home">
+                DR Login Page
+            </div>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="login">LOGIN</a></li>
+                <li><a href="Register">REGISTER</a></li>
+            </ul>
+        </nav>
+    </div>      
+    <div>
+    <form action="/afterlogin" method="post">
+        <div class="container">
+      
+          <label for="email" class="mail">Email</label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw" class="mail">Password</label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <button type="submit" class="loginbtn">LogIn</button>
+          
+        </div>
+      </form>
+    </div>  
+</body>
+</html>
