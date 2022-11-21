@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/css/Register.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="home">DR Register</div>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="login">LOGIN</a></li>  
+            </ul>
+            
+        </nav>
+    <form action="/afterreg" method="post">
+        <div class="container">
+          <label for="name" class="mail"><b>Name</b></label>
+          <input type="text" placeholder="Enter your name" name="name" id="name" required>
+      
+          <label for="email" class="mail"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw" class="mail"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" required>
+          <button type="submit form-control" class="registerbtn">Register</button>
+          
+        </div>
+        <p class="login">Already you have an Account ?  <a href="login">Login</a></p>
+        
+      </form>
+</body>
+<script>
+     if (("{{pred}}") != "")
+     alert("{{pred}}");
+</script>
+</html>
